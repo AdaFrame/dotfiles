@@ -48,3 +48,4 @@ set number
 set autoindent
 set mouse=nicr
 set t_Co=256
+set ruler
