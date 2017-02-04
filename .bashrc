@@ -10,10 +10,11 @@ fi
 # export SYSTEMD_PAGER=
 
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/dev/liquidprompt/liquidprompt
 
 # User specific aliases and functions
 alias clr='clear; archey3'
 alias :q='exit'
-alias ls='ls -Alih'
+alias ls='ls -lih --color=auto'
+alias la='ls -Alih --color=auto'
 alias ~='cd ~'
