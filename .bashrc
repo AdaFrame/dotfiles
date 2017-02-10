@@ -1,5 +1,7 @@
 ## .bashrc
-archey3
+
+## Exports
+export EDITOR='/bin/vim'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -11,6 +13,9 @@ fi
 
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/dev/liquidprompt/liquidprompt
+
+## Startup
+archey3
 
 # User specific aliases and functions
 alias clr='clear; archey3'
