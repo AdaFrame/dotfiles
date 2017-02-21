@@ -12,7 +12,8 @@ fi
 # export SYSTEMD_PAGER=
 
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/dev/liquidprompt/liquidprompt
+#[[ $- = *i* ]] && source ~/dev/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source /usr/local/bin/liquidprompt/liquidprompt
 
 ## Startup
 archey3
