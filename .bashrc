@@ -24,7 +24,7 @@ alias clr='clear; archey3'
 ## Vim-like command to exit session
 alias :q='exit'
 ## ls with Long listing, inode data, human readable formatting, and coloring
-alias ls='ls -lih --color=auto'
+alias ls='ls -l  --human-readable --inode --color=auto'
 ## Same as above with all hidden files
 alias la='ls -l --human-readable --inode --almost-all --color=auto'
 ## Clears screen, change directory back to /home/$USER, redisplay archey and revoke sudo cached credentials.
