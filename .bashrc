@@ -31,6 +31,7 @@ alias la='ls -l --human-readable --inode --almost-all --color=auto'
 alias ~='cd ~; clear; archey3; sudo --remove-timestamp'
 ## Move one directory up
 alias ..='cd ./..'
+alias rainbowstream='clear; rainbowstream'
 
 ## Misc. Bash features
 shopt -s autocd
