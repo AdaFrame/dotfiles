@@ -22,8 +22,7 @@ if [ "$ARCHEY" -eq 1 ]; then
 	alias clr='clear; archey3'
 	## Clears screen, change directory back to /home/$USER, redisplay archey and revoke sudo cached credentials.
 	alias ~='cd ~; clear; archey3; sudo --remove-timestamp'
-
-elif [ "$ARCHEY" -eq 0 ]; then
+else
 	alias clr='clear'
 	alias ~='cd ~; clear; sudo --remove-timestamp'
 fi
