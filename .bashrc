@@ -36,6 +36,7 @@ alias la='ls -l --human-readable --inode --almost-all --color=auto'
 ## Move one directory up
 alias ..='cd ./..'
 alias rainbowstream='clear; rainbowstream'
+alias figlet='figlet -t'
 
 ## Misc. Bash features
 shopt -s autocd
