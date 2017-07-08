@@ -36,6 +36,7 @@ alias la='ls -l --human-readable --inode --almost-all --color=auto'
 ## Move one directory up
 alias ..='cd ./..'
 alias rainbowstream='clear; rainbowstream'
+## Default figlet to use terminal width > 80 characters
 alias figlet='figlet -t'
 
 ## Misc. Bash features
