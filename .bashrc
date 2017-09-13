@@ -29,13 +29,21 @@ fi
 
 ## Vim-like command to exit session
 alias :q='exit'
+
 ## ls with Long listing, inode data, human readable formatting, and coloring
 alias ls='ls -l  --human-readable --inode --color=auto'
+alias xs='exa --long --time-style=iso --color=auto --header --group --inode --links --git'
+
 ## Same as above with all hidden files
 alias la='ls -l --human-readable --inode --almost-all --color=auto'
+alias xa='exa --all --long --time-style=iso --color=auto --header --group --inode --links --git'
+
 ## Move one directory up
 alias ..='cd ./..'
+
+## Clear screen before starting Rainbowstream
 alias rainbowstream='clear; rainbowstream'
+
 ## Default figlet to use terminal width > 80 characters
 alias figlet='figlet -t'
 
