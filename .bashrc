@@ -1,5 +1,5 @@
 ## .bashrc
-
+ARCHEY=0
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -9,19 +9,19 @@ fi
 #export SYSTEMD_PAGER=
 
 ## Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source /usr/local/bin/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/.gitRepo/liquidprompt/liquidprompt
 
 ## Startup
 if [ "$ARCHEY" -eq 1 ]; then
-	archey3
+	archey
 fi
 
 ## User specific aliases and functions
 if [ "$ARCHEY" -eq 1 ]; then
 	## Clear the screen and redisplay Archey if available
-	alias clr='clear; archey3'
+	alias clr='clear; archey'
 	## Clears screen, change directory back to /home/$USER, redisplay archey and revoke sudo cached credentials.
-	alias ~='cd ~; clear; archey3; sudo --remove-timestamp'
+	alias ~='cd ~; clear; archey; sudo --remove-timestamp'
 else
 	alias clr='clear'
 	alias ~='cd ~; clear; sudo --remove-timestamp'
