@@ -16,6 +16,10 @@ if [ "$ARCHEY" -eq 1 ]; then
 	archey
 fi
 
+## If not running interactivly, do not do anything
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
+
 ## User specific aliases and functions
 if [ "$ARCHEY" -eq 1 ]; then
 	## Clear the screen and redisplay Archey if available
